@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-
+/* Header */
+  
 header {
     
     display: block;
@@ -20,6 +21,7 @@ div {
 .logo {
     display: block;
     margin: 0 auto;
+    max-height: 300px;
     max-width: 100%;
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -28,6 +30,7 @@ div {
 
 .linkit{
     display: block;
+    padding-bottom: 30px;
 }
 
 .link{
@@ -41,11 +44,17 @@ div {
   width: 40px;
 }
 
+.navbar {
+    background-color: rgb(187, 202, 202);
+    padding: 10px;
+    margin: 20px;
+    
+}
 
 li, .nav {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 20px;
     color: black;
     text-decoration: none;
     margin: 1rem;
@@ -64,14 +73,17 @@ li, .nav {
 }
 
 .nav_links li a:hover {
-    color:aqua
+    color:white;
+
 }
 
+/* Content */
 
 
+/* Alapalkki */
 .alapalkki{
     display: block;
-    height: 200px;
+    height: 330px;
     width: 100%;
     margin: 0px;
     padding: 0px;
@@ -79,7 +91,63 @@ li, .nav {
     margin-top: 10rem;
 }
 
-.copyright{
+.alapalkki h1 {
+    color: grey;
+    font-size: 14px;
+    padding-top: 4px;
+}
+
+.alapalkki .tiedot{
+    padding-top: 20px;
+}
+
+.alapalkki a{
+    font-size: 14px;
+    font-weight: 700;
     color: gray;
-    padding-top: 90px;
+    text-decoration: none;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+
+.alapalkki .copyright{
+    color: gray;
+    font-size: 20px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 769px){
+
+    .logo {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        
+    }
+
+    li, .nav {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+        margin: .5 rem;
+    }
+
+    .container .box {
+        flex-direction: column;
+    }
+
+    .container .box .column{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .alapalkki .copyright{
+        font-size: 14px;
+    }
 }

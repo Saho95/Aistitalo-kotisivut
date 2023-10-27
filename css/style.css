@@ -114,11 +114,10 @@ li, .nav {
 
 }
 
-/* alapalkki */
-
+/* Alapalkki */
 .alapalkki{
     display: block;
-    height: 200px;
+    height: 330px;
     width: 100%;
     margin: 0px;
     padding: 0px;
@@ -126,9 +125,30 @@ li, .nav {
     margin-top: 10rem;
 }
 
-.copyright{
+.alapalkki h1 {
+    color: grey;
+    font-size: 14px;
+    padding-top: 4px;
+}
+
+.alapalkki .tiedot{
+    padding-top: 20px;
+}
+
+.alapalkki a{
+    font-size: 14px;
+    font-weight: 700;
     color: gray;
-    padding-top: 90px;
+    text-decoration: none;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+
+.alapalkki .copyright{
+    color: gray;
+    font-size: 20px;
+    padding-top: 70px;
+    padding-bottom: 30px;
 }
 
 
@@ -162,7 +182,7 @@ li, .nav {
         width: 100%;
     }
     
-    .alapalkki{
-        font-size: 8px;
+    .alapalkki .copyright{
+        font-size: 14px;
     }
 }
