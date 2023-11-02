@@ -3,6 +3,8 @@
     <head>
         <title>Aistitalo</title>
         <link rel="stylesheet" href="\css\style.css">
+        <link rel="stylesheet" href="\css\header.css">
+        <link rel="stylesheet" href="\css\footer.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
@@ -17,7 +19,15 @@
             <nav class="navbar">
                 <ul class="nav_links">
                     <li> <a href="\html\index.html" class="nav"> Etusivu </a></li>
-                    <li> <a href="\html\palvelut.html" class="nav"> Palvelut </a></li>
+                    <div class="dropdown">
+                        <li class="palvelu"> <a href="\html\palvelut.html" class="nav"> Palvelut </a>
+                            <div class="content">
+                                <a class="drop" href="#">Päivätoiminta</a>
+                                <a class="drop" href="#">Autismiohjaus</a>
+                                <a class="drop" href="#">Työohjaus</a>
+                            </div> 
+                        </li>
+                    </div>
                     <li> <a href="#" class="nav"> Ympäristö Tilat </a></li>
                     <li> <a href="\html\galleria.html"class="nav"> Galleria </a></li>
                     <li> <a href="#"class="nav"> referensit </a></li>
@@ -36,9 +46,19 @@
             Meille asiakas on tärkein ja työtä tehdään suurella sydämellä ilon ja positiivisen elämän asenteen kautta. Asiakkaan kohtaaminen, vuorovaikutus, tasavertaisuus, turvallisuus, yhdessä tekeminen ja osallistuminen ovat yrityksen tärkeimpiä arvoja. Aistitalo Oy:n on perustanut Katja Salminen. </h1>
        </div> 
 
-       <div class="alapalkki">
-        <h1 class="copyright"> COPYRIGHT © 2023 JUHO SALMINEN DESING</h1>
-       </div>
+       <footer>
+        <div class="alapalkki">
+            <h1 class="tiedot"><u>YHTEYSTIEDOT</u></h1>
+            <h1 class="tiedot">Lähetä sähköpostia</h1>
+            <a href="mailto: rauno.salminen@aistitalo.fi" class="email"> <i class="fa-solid fa-envelope" style="color: #0d0d0d;"></i>  rauno.salminen@aistitalo.fi</a>
+            <h1 class="tiedot">Puhelin numero:</h1>
+            <h1><i class="fa-solid fa-phone" style="color: #0f0f0f;"></i> 0400451517</h1>
+            <h1 class="tiedot">Osoite:</h1>
+            <a href="https://www.google.com/maps/place/Aistitalo+Oy/@60.4073305,22.4168365,15z/data=!4m6!3m5!1s0x468c73a3fe1cd36d:0x9b5deb7b1d10daa7!8m2!3d60.4073305!4d22.4168365!16s%2Fg%2F1tdb_8r8?hl=fi&entry=ttu" target="_blank"><h1><i class="fa-solid fa-location-dot" style="color: #0a0a0a;"></i> Ruokokatu 13, 20780 Kaarina</h1></a>
+            <h1 class="copyright"> COPYRIGHT © 2023 JUHO SALMINEN DESIGN</h1>
+        </div>
+    </footer>
+
       <script src="/scripts/changePic.js"></script> 
     </body>
 </html>
