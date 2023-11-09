@@ -8,82 +8,7 @@
     
  }
 
-/* Header */
-  
-header {
-    
-    display: block;
-    justify-content: center;
-    text-align: center;
-}
 
-div {
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    color: black;
-    text-decoration: none;
-}
-
-.logo {
-    display: block;
-    margin: 0 auto;
-    max-height: 300px;
-    max-width: 100%;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    
-}
-
-.linkit{
-    display: block;
-    padding-bottom: 30px;
-}
-
-.link{
-  border: none;
-  color: white;
-  margin: .5rem;
-  font-size: 40px;
-  background: transparent;
-  cursor: pointer;
-  height: 40px;
-  width: 40px;
-}
-
-.navbar {
-    background-color: rgb(187, 202, 202);
-    padding: 10px;
-    margin: 20px;
-    
-}
-
-li, .nav {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    color: black;
-    text-decoration: none;
-    margin: 1rem;
-}
-.nav_links {
-    list-style: none;
-}
-
-.nav_links li {
-    display: inline-block;
-    align-items: center;
-}
-
-.nav_links li a {
-    transition: all 0.3s ease 0s;
-}
-
-.nav_links li a:hover {
-    color:white;
-
-}
 
 
 /* content */
@@ -96,7 +21,7 @@ li, .nav {
     
     max-height: 400px;
     overflow: auto;
-    padding-top: 100px;
+    padding-top: 120px;
     
 }
 
@@ -121,63 +46,11 @@ li, .nav {
 
 }
 
-/* Alapalkki */
-.alapalkki{
-    display: block;
-    height: 330px;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    background-color: rgb(187, 202, 202);
-    margin-top: 10rem;
-}
 
-.alapalkki h1 {
-    color: grey;
-    font-size: 14px;
-    padding-top: 4px;
-}
-
-.alapalkki .tiedot{
-    padding-top: 20px;
-}
-
-.alapalkki a{
-    font-size: 14px;
-    font-weight: 700;
-    color: gray;
-    text-decoration: none;
-    padding-top: 20px;
-    margin-top: 30px;
-}
-
-.alapalkki .copyright{
-    color: gray;
-    font-size: 20px;
-    padding-top: 70px;
-    padding-bottom: 30px;
-}
 
 
 @media only screen and (max-width: 769px){
 
-    .logo {
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-        padding-top: 10rem;
-        padding-bottom: 10rem;
-        
-    }
-
-    li, .nav {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 500;
-        font-size: 20px;
-        color: black;
-        text-decoration: none;
-        margin: .5 rem;
-    }
 
     .container .box {
         flex-direction: column;
@@ -189,7 +62,4 @@ li, .nav {
         width: 100%;
     }
     
-    .alapalkki .copyright{
-        font-size: 14px;
-    }
 }

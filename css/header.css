@@ -75,6 +75,35 @@ li, .nav {
 
 }
 
+/* dropdown */
+
+.dropdown {
+    display: inline;
+    padding-bottom: 30px;
+}
+
+.drop {
+    color: black;
+    background-color: lightgrey;
+    display: none;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 15px 10px 5px;
+    z-index: 999;
+    text-align: left;
+    border-bottom:2px  solid hsla(0, 3%, 66%, 0.549);
+}
+
+.content {
+    position: absolute;
+    background-color: brown;
+    margin-top: 26px;
+}
+
+.dropdown:hover .drop{
+    display: block;
+}
+
 @media only screen and (max-width: 769px){
 
     .logo {
@@ -86,7 +115,7 @@ li, .nav {
         
     }
 
-    li, .nav {
+    li, .nav { 
         font-family: "Montserrat", sans-serif;
         font-weight: 500;
         font-size: 20px;
@@ -94,5 +123,5 @@ li, .nav {
         text-decoration: none;
         margin: .5 rem;
     }
-
+ 
 }
