@@ -1,78 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+:root {
+    --ff-primary: "Montserrat", sans-serif;
 
+    --fw-n: 300;
+    --fw-m: 600;
+    --fw-b: 800;
+
+    --fs-2: 5rem;
+    --fs-3: 2rem;
+    --fs-p: 1rem;
+    --fs-l: 1.2rem;
+
+    --primary-clr: rgb(187, 202, 202);
+    --secondary-clr: white;
+    --accent-clr:  rgb(22, 178, 230);
+    --footer-clr: grey;
+
+    --spacer: 1rem;
+    --spacer-md: calc(var(--spacer) * 2);
+    --spacer-lg: calc(var(--spacer) * 3);
+
+    --gap: 5rem;
+    --gap-lg: 10rem;
+
+    --shadow: 0 0 1em rgba(0,0,0, .25);
+    --br: 5px;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    
+ }
 
 /* Content */
 
+.blog-headline {
+    text-align: center;
+    margin: var(--spacer-lg);
+    text-transform: uppercase;
+}
 
-/* Alapalkki */
-.alapalkki{
-    display: block;
-    height: 330px;
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.text-container {
+    margin-top: var(--spacer);
+    height: 70%;
+    overflow: auto;
+}
+
+.blog-card {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    max-width: 1400px;
+    height: 1000px;
+    margin: var(--spacer-md) auto;
+    border: rgb(213, 209, 209) solid 2px;
+    box-shadow: var(--shadow);
+    border-radius: var(--br);
+    
+}
+
+.blog-card img {
     width: 100%;
-    margin: 0px;
-    padding: 0px;
-    background-color: rgb(187, 202, 202);
-    margin-top: 10rem;
+    
+    
+}
+.card-bottom {
+    position: absolute;
+    height: 45%;
+    max-width: 100%;
+    bottom: 0px;
+    background-color: hsla(240, 100%, 100%, 1);
 }
 
-.alapalkki h1 {
-    color: grey;
-    font-size: 14px;
-    padding-top: 4px;
+.blog-date {
+    margin: var(--spacer-md);
 }
 
-.alapalkki .tiedot{
-    padding-top: 20px;
+.headline {
+    margin: 1rem 4rem 1rem 4rem;
+    text-align: left;
+    font-weight: bold;
+    font-size: var(--fs-3);
+}
+.description {
+    margin: 1rem 4rem 1rem 4rem;
+    text-align: left;
 }
 
-.alapalkki a{
-    font-size: 14px;
-    font-weight: 700;
-    color: gray;
+.readmore {
+    position: absolute;
     text-decoration: none;
-    padding-top: 20px;
-    margin-top: 30px;
-}
-
-.alapalkki .copyright{
-    color: gray;
-    font-size: 20px;
-    padding-top: 70px;
-    padding-bottom: 30px;
+    color: black;
+    font-size: var(--fs-p);
+    left: 3rem;
+    bottom: 1rem;
+    margin: 1rem;
 }
 
 @media only screen and (max-width: 769px){
 
-    .logo {
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-        padding-top: 10rem;
-        padding-bottom: 10rem;
-        
-    }
-
-    li, .nav {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 500;
-        font-size: 20px;
-        color: black;
-        text-decoration: none;
-        margin: .5 rem;
-    }
-
-    .container .box {
-        flex-direction: column;
-    }
-
-    .container .box .column{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    
-    .alapalkki .copyright{
-        font-size: 14px;
-    }
+   
 }

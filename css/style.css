@@ -1,6 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 
+:root {
+    --ff-primary: "Montserrat", sans-serif;
+
+    --fw-n: 300;
+    --fw-m: 600;
+    --fw-b: 800;
+
+    --fs-2: 3rem;
+    --fs-3: 2rem;
+    --fs-p: 1rem;
+    --fs-l: 1.2rem;
+
+    --primary-clr: rgb(187, 202, 202);
+    --secondary-clr: white;
+    --accent-clr:  rgb(22, 178, 230);
+    --footer-clr: grey;
+
+    --spacer: 1rem;
+    --spacer-md: calc(var(--spacer) * 2);
+    --spacer-lg: calc(var(--spacer) * 3);
+
+    --gap: 5rem;
+    --gap-lg: 10rem;
+
+    --shadow: 0 0 1em rgba(0,0,0, .25);
+    --br: 5px;
+
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,41 +38,43 @@
  }
 
 
-
-
 /* content */
 
-.kuva {
-    display: block;
-    margin: 0 auto;
+.img-container {
+    width: 100%;
+    height: 600px;
     overflow: hidden;
-    align-items: center;
+}
+
+.img-container img {
     
-    max-height: 400px;
-    overflow: auto;
-    padding-top: 120px;
+    width: 100%;
+    min-height: 600px;
+    
+    
     
 }
 
 .otsikko {
-    margin-top: 100px;
+    margin-top: var(--spacer-lg);
+    margin-bottom: var(--spacer-md);
     text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 32px;
-    color: rgb(22, 178, 230);
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-m);
+    font-size: var(--fs-3);
+    color: var(--accent-clr);
     text-decoration: none;
     
 }
 
 .teksti {
     text-align: center;
-    font-weight: 4;
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-top: 30px;
-    
-
+    font-size: var(--fs-p);
+    font-weight: var(--fw-n);
+    margin-right: var(--gap-lg);
+    margin-left: var(--gap-lg);
+    margin-top: var(--spacer);
+    margin-bottom: var(--gap);
 }
 
 

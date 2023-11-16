@@ -1,3 +1,39 @@
+:root {
+    --ff-primary: "Montserrat", sans-serif;
+
+    --fw-n: 300;
+    --fw-m: 600;
+    --fw-b: 800;
+
+    --fs-2: 3rem;
+    --fs-3: 2rem;
+    --fs-p: 1rem;
+    --fs-l: 1.2rem;
+
+    --primary-clr: rgb(187, 202, 202);
+    --secondary-clr: white;
+    --accent-clr:  rgb(22, 178, 230);
+    --footer-clr: grey;
+
+    --spacer: 1rem;
+    --spacer-md: calc(var(--spacer) * 2);
+    --spacer-lg: calc(var(--spacer) * 3);
+
+    --gap: 5rem;
+    --gap-lg: 10rem;
+
+    --shadow: 0 0 1em rgba(0,0,0, .25);
+    --br: 5px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    
+ }
+
 /* Header */
   
 header {
@@ -7,55 +43,45 @@ header {
     text-align: center;
 }
 
-div {
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    color: black;
-    text-decoration: none;
-}
 
 .logo {
     display: block;
     margin: 0 auto;
     max-height: 300px;
     max-width: 100%;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: var(--gap-lg);
+    padding-bottom: var(--gap-lg);
     
 }
 
 .linkit{
     display: block;
-    padding-bottom: 30px;
+    padding-bottom: var(--spacer-lg);
 }
 
 .link{
   border: none;
-  color: white;
+  color: var(--secondary-clr);
   margin: .5rem;
   font-size: 40px;
   background: transparent;
   cursor: pointer;
-  height: 40px;
-  width: 40px;
+  height: var(--spacer-lg);
+  width: var(--spacer-lg);
 }
 
 .navbar {
-    background-color: rgb(187, 202, 202);
-    padding: 10px;
-    margin: 20px;
-    
+    background-color: var(--primary-clr);
+    padding: var(--spacer);
 }
 
 li, .nav {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-n);
+    font-size: var(--fs-l);
     color: black;
     text-decoration: none;
-    margin: 1rem;
+    margin: var(--spacer);
 }
 .nav_links {
     list-style: none;
@@ -71,7 +97,7 @@ li, .nav {
 }
 
 .nav_links li a:hover {
-    color:white;
+    color: var(--secondary-clr);
 
 }
 
@@ -79,15 +105,15 @@ li, .nav {
 
 .dropdown {
     display: inline;
-    padding-bottom: 30px;
+    padding-bottom: var(--spacer-md);
 }
 
 .drop {
     color: black;
-    background-color: lightgrey;
+    background-color:var(--primary-clr);
     display: none;
     text-decoration: none;
-    font-size: 20px;
+    font-size: var(--fs-l);
     padding: 10px 15px 10px 5px;
     z-index: 999;
     text-align: left;
@@ -96,8 +122,7 @@ li, .nav {
 
 .content {
     position: absolute;
-    background-color: brown;
-    margin-top: 26px;
+    margin-top: 10px;
 }
 
 .dropdown:hover .drop{
