@@ -13,10 +13,10 @@
     --fs-p: 1rem;
     --fs-l: 1.2rem;
 
-    --primary-clr: rgb(187, 202, 202);
-    --secondary-clr: white;
-    --accent-clr:  rgb(22, 178, 230);
-    --footer-clr: grey;
+    --primary-clr: #AF7C78;
+    --secondary-clr: #F7F7F2;
+    --accent-clr:  #587B7F;
+    --footer-clr: #1B2021;
 
     --spacer: 1rem;
     --spacer-md: calc(var(--spacer) * 2);
